@@ -26,9 +26,6 @@ from django.conf.urls import url
 from django.core.wsgi import get_wsgi_application
 from django.http import HttpResponse
 import views
-def index(request):
-    return HttpResponse('heelo World')
-
 
 application = get_wsgi_application()
 
