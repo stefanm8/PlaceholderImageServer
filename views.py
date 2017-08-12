@@ -54,6 +54,6 @@ def generate_Placeholder(request, width, height):
 
         return HttpResponse(image, content_type='image/png')
     else:
-        return HttpResponse("invalid image")
+        return HttpResponseBadRequest("invalid image")
 def index(request):
     return HttpResponseBadRequest('Invalid image size')
